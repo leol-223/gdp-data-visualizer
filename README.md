@@ -23,7 +23,7 @@ I originally developed this in 2021 (8th grade) to explore the Processing enviro
 ## Data Source
 *   **Source:** World Bank Open Data
 *   **Dataset:** Nominal GDP Per Capita
-*   **Link:** [World Bank Data (2000-2020)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?end=2020&start=2000)
+*   **Link:** [World Bank Data (2000-2020)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)
 
 *Note: Data visualized here may vary slightly from current records as the World Bank occasionally revises data retrospectively.*
 
