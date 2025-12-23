@@ -37,7 +37,7 @@ Data data;
 
 void settings() {
   int w = round(xMax + xMin);
-  int h = round(yMax + yMin / 2);
+  int h = round(yMax + yMin/4);
   size(w, h);
 }
 
