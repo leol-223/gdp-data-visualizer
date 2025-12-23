@@ -2,7 +2,7 @@
 String title = "GDP Per Capita Growth (2000-2020)";
 String subtitle = "Each country's current GDP Per Capita is shown in parentheses";
 // String subtitle = "*This chart only includes countries with a GDP Per Capita of 10,000 USD or more. Each country's current GDP Per Capita is shown in parentheses."; 
-float scale = 0.8;  // Controls the size of the bar graph, default (scale=1) is 1600 pixels wide for 20 bars
+float scale = 1;  // Controls the size of the bar graph, default (scale=1) is 1600 pixels wide for 20 bars
 boolean saveFile = true; // Save the image as png. This make take a few seconds for very high resolutions
 boolean restrictCountries = false; // Only allow countries with gdppp of 10k or more to appear
 
@@ -52,7 +52,7 @@ void setup() {
   for (int i = 0; i < numBars; i++) {
     String country = countries[i];
     flags[i] = getFlag(country);
-    flagColors[i] = averagePixelColor(flags[i]);
+    flagColors[i] = getBarColor(flags[i]);
   }
   highestGrowth = data.table.getFloat(0, "Growth");
   
@@ -161,7 +161,7 @@ String addComma(String num) {
   return num.substring(0, num.length()-3) + "," + num.substring(num.length()-3, num.length());
 }
 
-color averagePixelColor(PImage image) {
+color getBarColor(PImage image) {
   image.loadPixels();
   int numPixels = image.pixels.length;
   float[] reds = new float[numPixels];
@@ -172,7 +172,10 @@ color averagePixelColor(PImage image) {
     greens[loc] = green(image.pixels[loc]);
     blues[loc] = blue(image.pixels[loc]);
   }
-  return color(mean(reds), mean(greens), mean(blues));
+  colorMode(HSB, 255);
+  color avgColor = color(mean(reds), mean(greens), mean(blues));
+  float h = hue(avgColor);
+  return color(h, 138, 110);
 }
 
 String capitalize(String s){
