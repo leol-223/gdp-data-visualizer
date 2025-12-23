@@ -2,7 +2,7 @@
 String title = "GDP Per Capita Growth (2000-2020)";
 String subtitle = "Each country's current GDP Per Capita is shown in parentheses";
 // String subtitle = "*This chart only includes countries with a GDP Per Capita of 10,000 USD or more. Each country's current GDP Per Capita is shown in parentheses."; 
-float scale = 1;  // Controls the size of the bar graph, default (scale=1) is 1600 pixels wide for 20 bars
+float scale = 3;  // Controls the size of the bar graph, default (scale=1) is 1600 pixels wide for 20 bars
 boolean saveFile = true; // Save the image as png. This make take a few seconds for very high resolutions
 boolean restrictCountries = false; // Only allow countries with gdppp of 10k or more to appear
 
