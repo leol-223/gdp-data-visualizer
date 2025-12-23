@@ -7,14 +7,14 @@ A legacy project (2021) exploring global economic trends through data visualizat
 <img src="gdpGrowthBarGraph/GDP Per Capita Growth (2000-2020).png" width="100%">
 
 ## About
-This is a data visualization tool designed to track **GDP (per capita)** growth over time. It renders a bar graph showing which countries saw the largest percentage jump in GDP between 2000 and 2020.
+This is a data visualization tool designed to track GDP (per capita) growth over time. It renders a bar graph showing which countries saw the largest percentage jump in GDP (per capita) between 2000 and 2020.
 
-I originally developed this in 2021 (8th grade) to explore the Processing environment and data analysis logic.
+I originally developed this project in 2021 to explore Processing and data analysis logic.
 
 ## Key Features
 *   **Dynamic Rendering:** Bars are rendered automatically based on the data, with customizable variables for resolution and spacing.
 *   **Flag Integration:** The graph displays country flags for context.
-*   **Color Algorithm:** Bar colors are generated based on the **average color of each flag**, making the countries easily distinguishable.
+*   **Color Algorithm:** Bar colors are generated based on the average color of each flag, making the countries easily distinguishable.
 
 ## Technologies Used
 *   **Environment:** Processing (Java)
