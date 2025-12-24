@@ -25,4 +25,4 @@ This project was originally developed in 2021, with the goal of better understan
 *   **Dataset:** Nominal GDP Per Capita
 *   **Link:** [World Bank Data (2000-2020)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)
 
-*Note: Data here may be marginally different from the most up-to-date data, because of annual revisions.*
+Note: Data here may be marginally different from the most up-to-date data, because of annual revisions.
