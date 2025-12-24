@@ -2,19 +2,19 @@
 
 ![Processing](https://img.shields.io/badge/Built%20With-Processing-blue)
 
-A legacy project (2021) exploring global economic trends through data visualization.
+This legacy project visualizes global economic trends using Processing (Java).
 
 <img src="gdpGrowthBarGraph/GDP Per Capita Growth (2000-2020).png" width="100%">
 
 ## About
-This is a data visualization tool designed to track GDP (per capita) growth over time. It renders a bar graph showing which countries saw the largest percentage jump in GDP (per capita) between 2000 and 2020.
+This tool uses GDP data over time to create a comprehensive bar graph. The bar graph allows for an easy and visual way to see which countries had the most GDP growth from 2000 to 2020.
 
-I originally developed this project in 2021 to explore Processing and data analysis logic.
+This project was originally developed in 2021, with the goal of better understanding the process behind data visualization.
 
 ## Key Features
-*   **Dynamic Rendering:** Bars are rendered automatically based on the data, with customizable variables for resolution and spacing.
-*   **Flag Integration:** The graph displays country flags for context.
-*   **Color Algorithm:** Bar colors are generated based on the average color of each flag, making the countries easily distinguishable.
+*   **Dynamic Rendering:** Bars have their color and size automatically generated based on the dataset.
+*   **Flag Integration:** The graph displays country flags alongside the data as an easy visual cue.
+*   **Color Algorithm:** Bar colors are generated uniquely based on each flag, making the bar easier to scan through.
 
 ## Technologies Used
 *   **Environment:** Processing (Java)
@@ -25,16 +25,4 @@ I originally developed this project in 2021 to explore Processing and data analy
 *   **Dataset:** Nominal GDP Per Capita
 *   **Link:** [World Bank Data (2000-2020)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)
 
-*Note: Data visualized here may vary slightly from current records as the World Bank occasionally revises data retrospectively.*
-
-## How to Run
-
-**Prerequisites:** [Processing IDE 3.0+](https://processing.org/download)
-
-1.  Clone the repo:
-    ```bash
-    git clone https://github.com/leol-223/gdp-data-visualizer.git
-    ```
-2.  Open the project folder:
-    *   Navigate to `gdpGrowthBarGraph` -> `gdpGrowthBarGraph.pde`
-3.  Open the file in the Processing IDE and run the sketch.
+*Note: Data here may be marginally different from the most up-to-date data, because of annual revisions.*
